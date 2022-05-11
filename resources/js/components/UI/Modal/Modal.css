@@ -1,0 +1,62 @@
+.Modal {
+    text-align: center;
+    position: fixed;
+    background-color: white;
+    width:85%;
+    padding: 16px;
+    left: 7%;
+    top: 30%;
+    box-sizing: border-box;
+    transition: all 0.3s ease-out;
+    z-index: 9999999;
+    border-radius: 9px;
+    box-shadow: 2px 4px 14px 2px rgba(0,0,0,.1);
+    animation:ModalOpacity 2s;
+    -moz-animation: ModalOpacity 2s;
+    -o-animation: ModalOpacity 2s;
+    -webkit-animation: ModalOpacity 2s;
+}
+
+@keyframes ModalOpacity{
+    from {opacity: 0}
+    to {opacity: 1}
+  }
+  
+
+
+.Opening{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.Closing{
+    transform: translateY(-100vh);
+    opacity: 0;
+}
+
+.SubmitButton{
+    color: white;
+    cursor: pointer;
+    border-radius: 7px;
+    outline: none;
+    border: none;
+    transition: all 0.3s;
+    background-color: #51be78;
+    padding: 6px 19px 6px 19px;
+    display: inline-block;
+    margin: 5px;
+  }
+
+
+  .CloseButton{
+    color: white;
+    cursor: pointer;
+    border-radius: 7px;
+    outline: none;
+    border: none;
+    transition: all 0.3s;
+    background-color: #dd493d;
+    padding: 6px 19px 6px 19px;
+    display: inline-block;
+    margin: 5px;
+  }

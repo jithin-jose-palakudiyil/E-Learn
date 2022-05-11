@@ -1,0 +1,245 @@
+.Sidedrawer{
+  
+    position: fixed;
+    left: 100%;
+    z-index: 1000;
+    top: 10%;
+    width: 34%;
+    height: 100vh;
+    box-shadow: -12px 0px 12px -1px rgba(0,0,0,.1);
+    box-sizing: border-box;
+    background-color: #f3f3f3;
+    transition: all 0.3s;
+    -webkit-transition:all 0.3s;
+    -moz-transition:all 0.3s;
+    -ms-transition:all 0.3s ;
+    -o-transition:all 0.3s ;
+}
+
+.arrowButtonOpened{
+  position: absolute;
+  right: 100%;
+  top: 14%;
+  cursor: pointer;
+  z-index: 999999;
+  transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  background: #07234da3;
+  color: white;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+  padding: 17px 8px 17px 8px;
+  animation:arrowButtonOpacity 9s;
+  -moz-animation: arrowButtonOpacity 9s;
+  -o-animation: arrowButtonOpacity 9s;
+  -webkit-animation: arrowButtonOpacity 9s;
+}
+
+.arrowButtonClosed{
+  position: absolute;
+  right: 100%;
+  top: 14%;
+  cursor: pointer;
+  z-index: 999999;
+  transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  background: #07234da3;
+  color: white;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+  padding: 17px 8px 17px 8px;
+  animation:arrowButtonOpacity 8s;
+  -moz-animation: arrowButtonOpacity 8s;
+  -o-animation: arrowButtonOpacity 8s;
+  -webkit-animation: arrowButtonOpacity 8s;
+}
+
+
+.arrowButtonOpened:hover,
+.arrowButtonClosed:hover{
+  background: #07234dd0;
+}
+
+@keyframes arrowButtonOpacity{
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+
+@media only screen and (max-width:1160px){
+  .Sidedrawer{
+    width: 38%;
+  }
+}
+
+@media only screen and (max-width:975px){
+  .Sidedrawer{
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: 870px){
+  .Sidedrawer{
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 811px){
+  .Sidedrawer{
+    width: 55%;
+  }
+}
+
+@media only screen and (max-width: 677px){
+  .Sidedrawer{
+    width: 79%;
+  }
+}
+
+@media only screen and (max-width: 480px){
+  .Sidedrawer{
+    width: 100%;
+  }
+
+  .arrowButtonOpened{
+    top: -12%;
+    right: 93.5%;
+   border-bottom-left-radius: 0;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+
+  .colorPaletteTable tr td{
+    color: #07234d;
+    font-size: 13px;
+  } 
+  
+}
+
+
+
+.Close{
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+}
+
+.Open{
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+}
+
+
+
+.QuestionPallettes{
+  margin-bottom: 15px;
+  height: 319px;
+  background-color: white;
+  padding: 15px;
+  overflow-y: auto;
+  border-radius: 8px;
+  padding-top: 13px;
+  border-radius: 13px;
+  }
+
+  .Boxes{
+    background-color:  rgb(205, 205, 205);
+    padding: 5px 13px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+    display: inline-block;
+    margin-right: 10px;
+    width: 44px;
+    height: 40px;
+    text-align: center;
+    margin: 5px;
+    color: black;
+    border: none;
+  }
+
+
+
+  .BoxesActive{
+    background-color: #51be78;
+    color: white;
+  }
+
+  .Answered{
+    background-color: cadetblue;
+    color:rgb(255, 255, 255);
+  }
+
+  .NotAnswered{
+    background-color: brown;
+    color:rgb(255, 255, 255);
+  }
+
+  .Marked{
+   color:rgb(255, 255, 255);
+    background-color: darkorchid;
+  }
+
+  .MarkedAndAnswered{
+   color:rgb(255, 255, 255);
+    background-color: #432750;
+  }
+  
+
+  .colorPaletteTable{
+    border-radius: 13px;
+    width: 93%;
+    background-color: white;
+    margin: 55px 0% 20px 3%;
+    text-align: left;
+    border-collapse: separate;
+    border-spacing:0 8px; 
+    padding: 20px;
+  }
+  
+  /* .colorPaletteTable tr{
+  } */
+  
+  .colorPaletteTable tr td{
+    color: #07234d;
+  } 
+  
+  .colorPaletteTable tr td div{
+    display:inline-block; 
+    height: 32px;
+    width: 36px;
+    padding-top: 2px;
+     text-align: center;
+     margin-right: 10px;
+     color: white;
+     border-radius: 4px;
+  }
+
+  .Buttoncontainer{
+    
+  }
+
+  .SubmitMockButton{
+    color: white;
+    cursor: pointer;
+    border-radius: 7px;
+    outline: none;
+    border: none;
+    transition: all 0.3s;
+    background-color: #51be78;
+    padding: 6px 19px 6px 19px;
+    display: block;
+    margin: 0px auto;
+  }
+
+ 
